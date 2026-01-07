@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function getDigitsSum(num) {
+        let sum = 0;
+        let str = String(num);
+
+        for (let char of str) {
+          sum += Number(char);
+        }
+
+        return sum;
+      }
+
+      function getDigitsSum(num) {
+        return String(num)
+          .split("")
+          .reduce((sum, digit) => sum + Number(digit), 0);
+      }
+
+      console.log(getDigitsSum(123)); 
+      console.log(getDigitsSum(4567)); 
+    </script>
+  </body>
+</html>

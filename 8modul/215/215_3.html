@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function getProduct(arr) {
+        if (arr.length === 0) return 0; // или 1, зависит от логики
+        let res = 1; // Для произведения нужно начинать с 1
+        for (let elem of arr) {
+          res *= elem;
+        }
+        return res;
+      }
+    </script>
+  </body>
+</html>

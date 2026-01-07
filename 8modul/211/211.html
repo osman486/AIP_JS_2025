@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function divideUntilLessThanTen(num) {
+        let iterations = 0;
+        let current = num;
+
+        while (current >= 10) {
+          current /= 2; 
+          iterations++; 
+        }
+
+        return iterations;
+      }
+      console.log(divideUntilLessThanTen(100)); 
+      console.log(divideUntilLessThanTen(10)); 
+      console.log(divideUntilLessThanTen(5)); 
+      console.log(divideUntilLessThanTen(1000)); 
+      </script>
+  </body>
+</html>
