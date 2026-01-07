@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let arr1 = [1, 4, 9, 16];
+let result1 = arr1.map(num => Math.sqrt(num));
+console.log(result1);
+
+let arr2 = ['a', 'b', 'c'];
+let result2 = arr2.map(str => str + '!');
+console.log(result2);
+
+let arr3 = ['abc', 'def', 'ghi'];
+let result3 = arr3.map(str => str.split('').reverse().join(''));
+console.log(result3);
+
+let arr4 = ['123', '456', '789'];
+let result4 = arr4.map(str => str.split('').map(Number));
+console.log(result4);
+
+let arr5 = [1, 2, 3, 4, 5];
+let result5 = arr5.map((num, index) => num * index);
+console.log(result5);
+    </script>
+</body>
+</html>
