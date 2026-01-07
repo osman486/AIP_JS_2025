@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let url1 = "http://example.com";
+      let url2 = "https://example.com";
+      let url3 = "example.com";
+
+      console.log("Способ 1 - startsWith():");
+      console.log( `${url1} начинается на 'http://': ${url1.startsWith("http://")}`);
+      console.log(`${url2} начинается на 'http://': ${url2.startsWith("http://")}` );
+      console.log( `${url3} начинается на 'http://': ${url3.startsWith("http://")}`);
+    </script>
+  </body>
+</html>

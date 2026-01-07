@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let minNumber = Math.min(4, -2, 5, 19, -130, 0, 10);
+      let maxNumber = Math.max(4, -2, 5, 19, -130, 0, 10);
+
+      console.log("Минимальное число:", minNumber); 
+      console.log("Максимальное число:", maxNumber); 
+      let numbers = [4, -2, 5, 19, -130, 0, 10];
+      let minNumber2 = Math.min(...numbers);
+      let maxNumber2 = Math.max(...numbers);
+
+      console.log("Минимальное (из массива):", minNumber2); 
+      console.log("Максимальное (из массива):", maxNumber2); 
+      let minNum = numbers[0];
+      let maxNum = numbers[0];
+
+      for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] < minNum) {
+          minNum = numbers[i];
+        }
+        if (numbers[i] > maxNum) {
+          maxNum = numbers[i];
+        }
+      }
+
+      console.log("Минимальное (через цикл):", minNum); 
+      console.log("Максимальное (через цикл):", maxNum); 
+    </script>
+  </body>
+</html>

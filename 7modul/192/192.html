@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let str = "i study javascript";
+
+      console.log("Исходная строка:", str);
+
+      // 1. С помощью substr
+      let word1_substr = str.substr(2, 5); 
+      let word2_substr = str.substr(8); 
+      console.log("\n1. Используя substr():");
+      console.log("'study':", word1_substr); 
+      console.log("'javascript':", word2_substr); 
+
+      // 2. С помощью substring
+      let word1_substring = str.substring(2, 7); 
+      let word2_substring = str.substring(8); 
+
+      console.log("\n2. Используя substring():");
+      console.log("'study':", word1_substring); 
+      console.log("'javascript':", word2_substring); 
+
+      // 3. С помощью slice
+      let word1_slice = str.slice(2, 7); 
+      let word2_slice = str.slice(8);
+
+      console.log("\n3. Используя slice():");
+      console.log("'study':", word1_slice);
+      console.log("'javascript':", word2_slice);
+      let word2_slice_negative = str.slice(-10); 
+      console.log("\nС отрицательным индексом (slice):");
+      console.log("'javascript':", word2_slice_negative); 
+    </script>
+  </body>
+</html>
