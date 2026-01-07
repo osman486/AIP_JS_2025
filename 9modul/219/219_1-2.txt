@@ -1,0 +1,2 @@
+1) ReferenceError: num is not defined
+2) 5
