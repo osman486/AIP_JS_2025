@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function test(func1, func2, func3) {
+    console.log(func1() + func2() + func3());
+}
+
+test(
+    function() { return 1; },
+    function() { return 2; },
+    function() { return 3; }
+);
+    </script>
+</body>
+</html>
