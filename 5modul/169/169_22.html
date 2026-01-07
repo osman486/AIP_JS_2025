@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // №22
+      let obj = {
+        employee1: 100,
+        employee2: 200,
+        employee3: 300,
+        employee4: 400,
+        employee5: 500,
+        employee6: 600,
+        employee7: 700,
+      };
+      for (let key in obj) {
+        if (obj[key] <= 400) {
+          obj[key] *= 1.1;
+        }
+      }
+      console.log(obj);
+    </script>
+  </body>
+</html>
