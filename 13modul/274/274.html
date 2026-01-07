@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let func = (function() {
+    let num = 1;
+    
+    return function() {
+        console.log(num);
+        num++;
+    };
+})();
+
+func();
+func();
+func();
+func();
+func();
+
+let counter = (function() {
+    let num = 1;
+    
+    return function() {
+        console.log(num);
+        num = num < 5 ? num + 1 : 1;
+    };
+})();
+
+for (let i = 0; i < 10; i++) {
+    counter();
+}
+    </script>
+</body>
+</html>
