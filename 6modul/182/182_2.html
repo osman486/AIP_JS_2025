@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let employees = [
+        { name: "name1", salary: 300 },
+        { name: "name2", salary: 400 },
+        { name: "name3", salary: 500 },
+      ];
+
+      let totalSalary = 0;
+      for (let employee of employees) {
+        totalSalary += employee.salary;
+      }
+
+      console.log(`Сумма зарплат: ${totalSalary}`);
+    </script>
+  </body>
+</html>

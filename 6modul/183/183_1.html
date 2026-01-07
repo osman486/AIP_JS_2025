@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let affairs = {
+        2018: {
+          11: {
+            29: ["name111", "name112", "name113"],
+            30: ["name121", "name122", "name123"],
+          },
+          12: {
+            30: ["name211", "name212", "name213"],
+            31: ["name221", "name222", "name223"],
+          },
+        },
+        2019: {
+          12: {
+            29: ["name311", "name312", "name313"],
+            30: ["name321", "name322", "name323"],
+            31: ["name331", "name332", "name333"],
+          },
+        },
+      };
+      let year = "2018";
+      let month = 11;
+      let day = 29;
+
+      console.log(affairs[year][month][day]);
+      year = "2019";
+      month = 12;
+      day = 31;
+      console.log(affairs[year][month][day]);
+    </script>
+  </body>
+</html>
