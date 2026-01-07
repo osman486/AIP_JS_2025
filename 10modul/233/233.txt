@@ -1,0 +1,58 @@
+№1  Определите, является ли представленная функция Function Declaration или Function Expression:
+function func() {
+	console.log('!');
+}
+№2 Определите, является ли представленная функция Function Declaration или Function Expression:
+
+let func = function() {
+	console.log('!');
+}
+№3 Определите, является ли представленная функция Function Declaration или Function Expression:
+
++function() {
+	console.log('!');
+}
+№4 Определите, является ли представленная функция Function Declaration или Function Expression:
+
+!function func() {
+	console.log('!');
+}
+№5 Определите, является ли представленная функция Function Declaration или Function Expression:
+
+-function func() {
+	console.log('!');
+}
+№6 Определите, является ли представленная функция Function Declaration или Function Expression:
+
+1 + function func() {
+	console.log('!');
+}
+№7 Определите, является ли представленная функция Function Declaration или Function Expression:
+
+(function func() {
+	console.log('!');
+})
+№8 Определите, является ли представленная функция Function Declaration или Function Expression:
+
+console.log(
+	function() {
+		console.log('!');
+	}
+);
+Ответы: 
+1)Function Declaration
+
+2)Function Expression
+
+3)Function Expression
+
+4)Function Expression
+
+5)Function Expression
+
+6)Function Expression
+
+7)Function Expression
+
+8)Function Expression
+

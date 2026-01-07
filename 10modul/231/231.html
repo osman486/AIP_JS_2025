@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+console.log("Проверка Function Declaration:");
+
+console.log(funcDecl());
+
+function funcDecl() {
+    return "Function Declaration работает";
+}
+console.log(funcDecl()); 
+
+console.log("\nПроверка Function Expression:");
+
+try {
+
+    console.log(funcExpr()); 
+} catch (error) {
+    console.log("Ошибка при вызове funcExpr до объявления:", error.message);
+}
+let funcExpr = function() {
+    return "Function Expression работает";
+};
+console.log(funcExpr());
+    </script>
+</body>
+</html>
