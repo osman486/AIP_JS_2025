@@ -1,0 +1,22 @@
+№1 ответ: true
+№2 ответ: false
+№3 ответ: true
+№4 ответ: false
+№5 ответ: false
+№6 ответ: true
+№7 ответ: false
+№8 ответ: true
+№9 ответ: true
+№10 ответ: false
+№11 ответ: true
+№12 ответ: true
+№13 ответ: false
+№14 ответ: true
+№15 ответ: false
+№16 ответ: true
+№17 ответ: false
+№18 ответ: true
+№19 ответ: true
+№20 ответ: true
+№21 ответ: false
+
