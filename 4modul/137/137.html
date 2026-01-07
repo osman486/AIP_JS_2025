@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проверка массива</title>
+</head>
+<body>
+    <script>
+        let testArrays = [
+            [1, 2, 3],
+            [4, 5],
+            [6, 7, 8, 9],
+            [10, 20, 30]
+        ];
+        
+        for (let arr of testArrays) {
+            if (arr.length === 3) {
+                let sum = arr[0] + arr[1] + arr[2];
+                alert("Массив: [" + arr + "]\nКоличество элементов: 3\nСумма: " + sum);
+            } else {
+                alert("Массив: [" + arr + "]\nКоличество элементов: " + arr.length + " (не 3)");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сумма цифр двухзначного числа</title>
+</head>
+<body>
+    <script>
+        let num = 56; 
+        
+        if (num >= 10 && num <= 99) {
+            let firstDigit = Math.floor(num / 10);
+            let secondDigit = num % 10; 
+            let sum = firstDigit + secondDigit;
+            if (sum <= 9) {
+                alert("Число: " + num + "\nСумма цифр: " + sum + "\nСумма цифр однозначна");
+            } else {
+                alert("Число: " + num + "\nСумма цифр: " + sum + "\nСумма цифр двухзначна");
+            }
+        } else {
+            alert("Число " + num + " не попадает в диапазон от 10 до 99");
+        }
+    </script>
+</body>
+</html>

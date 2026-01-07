@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проверка четности числа</title>
+</head>
+<body>
+    <script>
+        let testNumbers = [24, 17, 0, -8, 123, 100, 57, 88];
+        
+        for (let num of testNumbers) {
+            let lastDigit = Math.abs(num) % 10; // Последняя цифра
+            
+            if (lastDigit === 0 || lastDigit === 2 || lastDigit === 4 || lastDigit === 6 || lastDigit === 8) {
+                alert(num + " - четное (последняя цифра: " + lastDigit + ")");
+            } else {
+                alert(num + " - нечетное (последняя цифра: " + lastDigit + ")");
+            }
+        }
+    </script>
+</body>
+</html>
