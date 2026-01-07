@@ -7,8 +7,13 @@
 </head>
 <body>
     <script>
-         let user = {name:"Ibragimov", surname:"Osman"};
-         alert(`${user['name']} ${user['surname']} `)
+let arr = [1, 2, 3, 4, 5];
+
+function func(num1, num2, num3, num4, num5) {
+	return num1 + num2 + num3 + num4 + num5;
+}
+
+console.log(func(...arr));
     </script>
 </body>
 </html>
